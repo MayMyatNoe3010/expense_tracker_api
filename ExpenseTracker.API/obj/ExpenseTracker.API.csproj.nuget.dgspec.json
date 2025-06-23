@@ -1,0 +1,451 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.API/ExpenseTracker.API.csproj": {}
+  },
+  "projects": {
+    "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.API/ExpenseTracker.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.API/ExpenseTracker.API.csproj",
+        "projectName": "ExpenseTracker.API",
+        "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.API/ExpenseTracker.API.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj"
+              },
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj"
+              },
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Services/ExpenseTracker.Services.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Services/ExpenseTracker.Services.csproj"
+              },
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Utility/ExpenseTracker.Utility.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Utility/ExpenseTracker.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj",
+        "projectName": "ExpenseTracker.DataAccess",
+        "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj",
+        "projectName": "ExpenseTracker.Models",
+        "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Services/ExpenseTracker.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Services/ExpenseTracker.Services.csproj",
+        "projectName": "ExpenseTracker.Services",
+        "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Services/ExpenseTracker.Services.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.DataAccess/ExpenseTracker.DataAccess.csproj"
+              },
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Utility/ExpenseTracker.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Utility/ExpenseTracker.Utility.csproj",
+        "projectName": "ExpenseTracker.Utility",
+        "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Utility/ExpenseTracker.Utility.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Utility/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj": {
+                "projectPath": "/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/ExpenseTracker.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
