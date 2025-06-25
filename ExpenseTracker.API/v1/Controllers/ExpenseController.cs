@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ExpenseTracker.API.v1.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class ExpenseController : ControllerBase, IController<ExpenseRequest, Expense, ExpenseResponse>
     {
@@ -26,7 +26,7 @@ namespace ExpenseTracker.API.v1.Controllers
             _mapper = mapper;
         }
         //to check if the API is alive 
-        [HttpGet("/health")]
+        [HttpGet("health")]
         public IActionResult Health() => Ok("API is alive");
 
         [HttpPost("Add")]
