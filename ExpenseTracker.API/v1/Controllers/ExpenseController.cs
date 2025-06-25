@@ -25,6 +25,10 @@ namespace ExpenseTracker.API.v1.Controllers
             _serviceCollections = serviceCollections;
             _mapper = mapper;
         }
+        //to check if the API is alive 
+        [HttpGet("/health")]
+        public IActionResult Health() => Ok("API is alive");
+
         [HttpPost("Add")]
         public async Task<IActionResult> Add(ExpenseRequest entity)
         {
