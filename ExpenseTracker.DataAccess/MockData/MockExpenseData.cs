@@ -87,9 +87,9 @@ public static class MockTransactionData
             {
                 Id = 9,
                 Title = "Salary",
-                Amount = 4000.00,
+                Amount = 1000.00,
                 CreatedDate = DateTime.Parse("2025-06-12"),
-                Category = new CategoryResponse { Id = 1, Name = "Food", Icon = "utensils", Color = "#FF6F61" },
+                Category = new CategoryResponse { Id = 1, Name = "Salary", Icon = "utensils", Color = "#FF6F61" },
                 TransactionType = TransactionType.income
             },
             new()
