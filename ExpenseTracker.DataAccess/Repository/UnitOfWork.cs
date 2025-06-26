@@ -7,12 +7,12 @@ namespace ExpenseTracker.DataAccess.Repository;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDBContext _db;
-    public IExpenseRepository ExpenseRepository { get; private set; }
+    public ITransactionRepository TransactionRepository { get; private set; }
     public ICategoryRepository CategoryRepository { get; private set; }
     public UnitOfWork(ApplicationDBContext db)
     {
         _db = db;
-        ExpenseRepository = new ExpenseRepository(_db);
+        TransactionRepository = new TransactionRepository(_db);
         CategoryRepository = new CategoryRepository(_db);
     }
 

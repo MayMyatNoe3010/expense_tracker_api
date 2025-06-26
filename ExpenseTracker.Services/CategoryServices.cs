@@ -15,36 +15,36 @@ public class CategoryServices : ICategoryServices
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<Expense?> AddAsync(Expense item)
+    public async Task<Transaction?> AddAsync(Transaction item)
     {
-        await _unitOfWork.ExpenseRepository.AddAsync(item);
+        await _unitOfWork.TransactionRepository.AddAsync(item);
         await _unitOfWork.SaveAsync();
         return item;
     }
 
 
-    public async Task<Expense?> DeleteAsync(int id)
+    public async Task<Transaction?> DeleteAsync(int id)
     {
-        Expense deletedExpense = await _unitOfWork.ExpenseRepository.DeleteAsync(id);
-        return deletedExpense;
+        Transaction deletedTransaction = await _unitOfWork.TransactionRepository.DeleteAsync(id);
+        return deletedTransaction;
     }
 
-    public Task<IEnumerable<Expense>?> GetAllAsync(Expression<Func<Expense, bool>>[]? filter = null, string? includeProperties = null)
-    {
-        throw new NotImplementedException();
-    }
-
-    public Task<Expense?> GetAsync(Expression<Func<Expense, bool>>[]? filter = null, string? includeProperties = null)
+    public Task<IEnumerable<Transaction>?> GetAllAsync(Expression<Func<Transaction, bool>>[]? filter = null, string? includeProperties = null)
     {
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<Expense>?> GetByPageAsync(int draw, int start, int length)
+    public Task<Transaction?> GetAsync(Expression<Func<Transaction, bool>>[]? filter = null, string? includeProperties = null)
     {
         throw new NotImplementedException();
     }
 
-    public Task<Expense?> UpdateAsync(Expense item)
+    public Task<IEnumerable<Transaction>?> GetByPageAsync(int draw, int start, int length)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Transaction?> UpdateAsync(Transaction item)
     {
         throw new NotImplementedException();
     }

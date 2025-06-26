@@ -4,7 +4,7 @@ namespace ExpenseTracker.DataAccess.Repository.iRepository;
 
 public interface IUnitOfWork
 {
-    IExpenseRepository ExpenseRepository { get; }
+    ITransactionRepository TransactionRepository { get; }
     ICategoryRepository CategoryRepository { get; }
     Task SaveAsync();
 }

@@ -3,13 +3,13 @@ using ExpenseTracker.Models.Dtos.Response;
 
 namespace ExpenseTracker.DataAccess.MockData;
 
-public static class MockExpenseData
+public static class MockTransactionData
 {
-    public static async Task<List<ExpenseResponse>> GetMockExpenseResponses()
+    public static async Task<List<TransactionResponse>> GetMockTransactionResponses()
     {
         await Task.Delay(100); // Simulate async behavior
 
-        return new List<ExpenseResponse>
+        return new List<TransactionResponse>
         {
             new()
             {

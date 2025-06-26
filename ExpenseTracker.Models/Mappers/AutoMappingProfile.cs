@@ -9,8 +9,8 @@ public class AutoMappingProfile : Profile
 {
     public AutoMappingProfile()
     {
-        CreateMap<Expense, ExpenseResponse>();
-        CreateMap<ExpenseRequest, Expense>();
+        CreateMap<Transaction, TransactionResponse>();
+        CreateMap<TransactionRequest, Transaction>();
 
         CreateMap<Category, CategoryResponse>();
         CreateMap<CategoryRequest, Category>();

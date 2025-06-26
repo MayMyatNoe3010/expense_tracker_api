@@ -2,7 +2,7 @@ using System;
 
 namespace ExpenseTracker.Models.Dtos.Request;
 
-public class TransactionResquest
+public class TransactionRequest
 
 {
     public string Title { get; set; }

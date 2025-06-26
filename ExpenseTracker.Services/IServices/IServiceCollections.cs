@@ -4,7 +4,7 @@ namespace ExpenseTracker.Services.IServices;
 
 public interface IServiceCollections
 {
-     IExpenseServices ExpenseServices { get; }
+     ITransactionServices TransactionServices { get; }
      ICategoryServices CategoryServices { get; }
 
 }

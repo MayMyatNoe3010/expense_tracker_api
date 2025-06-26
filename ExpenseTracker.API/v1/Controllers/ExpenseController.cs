@@ -53,7 +53,7 @@ namespace ExpenseTracker.API.v1.Controllers
         [HttpPost("GetAll")]
         public async Task<IActionResult> GetAll()
         {
-            var data = await MockExpenseData.GetMockExpenseResponses();
+            var data = await MockTransactionData.GetMockTransactionResponses();
 
             return Ok(new APIResponse<List<TransactionResponse>>
             {
@@ -82,14 +82,14 @@ namespace ExpenseTracker.API.v1.Controllers
         [HttpPost("Update")]
         public async Task<IActionResult> Update(TransactionRequest entity)
         {
-            return await APIResponseHelper.HandleUpdate<ExpenseRequest, Expense, ExpenseResponse>(
+            return await APIResponseHelper.HandleUpdate<TransactionRequest, Transaction, TransactionResponse>(
                 entity,
                 async (req) =>
                 {
-                    var model = _mapper.Map<Expense>(req);
-                    return await _serviceCollections.ExpenseServices.UpdateAsync(model);
+                    var model = _mapper.Map<Transaction>(req);
+                    return await _serviceCollections.TransactionServices.UpdateAsync(model);
                 },
-                updatedEntity => _mapper.Map<ExpenseResponse>(updatedEntity)
+                updatedEntity => _mapper.Map<TransactionResponse>(updatedEntity)
             );
         }
 
