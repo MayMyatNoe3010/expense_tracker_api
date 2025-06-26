@@ -1,14 +1,6 @@
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/bin/Debug/net8.0/ExpenseTracker.Models.deps.json
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/bin/Debug/net8.0/ExpenseTracker.Models.runtimeconfig.json
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/bin/Debug/net8.0/ExpenseTracker.Models.dll
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/bin/Debug/net8.0/ExpenseTracker.Models.pdb
 /Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.csproj.AssemblyReference.cache
 /Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.GeneratedMSBuildEditorConfig.editorconfig
 /Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.AssemblyInfoInputs.cache
 /Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.AssemblyInfo.cs
 /Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.csproj.CoreCompileInputs.cache
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.dll
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/refint/ExpenseTracker.Models.dll
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.pdb
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.genruntimeconfig.cache
-/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ref/ExpenseTracker.Models.dll
+/Users/user/Desktop/expanse_tracker/api/ExpenseTracker.Models/obj/Debug/net8.0/ExpenseTracker.Models.sourcelink.json

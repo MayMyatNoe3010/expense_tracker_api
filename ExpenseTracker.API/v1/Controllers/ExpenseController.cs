@@ -15,12 +15,12 @@ namespace ExpenseTracker.API.v1.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class ExpenseController : ControllerBase, IController<ExpenseRequest, Expense, ExpenseResponse>
+    public class TransactionController : ControllerBase, IController<TransactionRequest, Transaction, TransactionResponse>
     {
         private readonly IServiceCollections _serviceCollections;
         private readonly IMapper _mapper;
 
-        public ExpenseController(IServiceCollections serviceCollections, IMapper mapper)
+        public TransactionController(IServiceCollections serviceCollections, IMapper mapper)
         {
             _serviceCollections = serviceCollections;
             _mapper = mapper;
@@ -30,13 +30,13 @@ namespace ExpenseTracker.API.v1.Controllers
         public IActionResult Health() => Ok("API is alive");
 
         [HttpPost("Add")]
-        public async Task<IActionResult> Add(ExpenseRequest entity)
+        public async Task<IActionResult> Add(TransactionRequest entity)
         {
-            return await APIResponseHelper.HandleCreate<ExpenseRequest, Expense, ExpenseResponse>(
+            return await APIResponseHelper.HandleCreate<TransactionRequest, Transaction, TransactionResponse>(
                 entity,
-                req => _mapper.Map<Expense>(req),
-                _serviceCollections.ExpenseServices.AddAsync,
-                entity => _mapper.Map<ExpenseResponse>(entity)
+                req => _mapper.Map<Transaction>(req),
+                _serviceCollections.TransactionServices.AddAsync,
+                entity => _mapper.Map<TransactionResponse>(entity)
             );
 
 
@@ -44,10 +44,10 @@ namespace ExpenseTracker.API.v1.Controllers
         [HttpPost("Delete")]
         public async Task<IActionResult> Delete(int id)
         {
-            return await APIResponseHelper.HandleDelete<Expense, ExpenseResponse>(
+            return await APIResponseHelper.HandleDelete<Transaction, TransactionResponse>(
                 id,
-                _serviceCollections.ExpenseServices.DeleteAsync,
-                entity => _mapper.Map<ExpenseResponse>(entity)
+                _serviceCollections.TransactionServices.DeleteAsync,
+                entity => _mapper.Map<TransactionResponse>(entity)
             );
         }
         [HttpPost("GetAll")]
@@ -55,7 +55,7 @@ namespace ExpenseTracker.API.v1.Controllers
         {
             var data = await MockExpenseData.GetMockExpenseResponses();
 
-            return Ok(new APIResponse<List<ExpenseResponse>>
+            return Ok(new APIResponse<List<TransactionResponse>>
             {
                 Status = true,
                 Message = "Mock data loaded",
@@ -63,24 +63,24 @@ namespace ExpenseTracker.API.v1.Controllers
             });
 
 
-            // return await APIResponseHelper.HandleGet<IEnumerable<Expense>, List<ExpenseResponse>>(
-            // async () => await _serviceCollections.ExpenseServices.GetAllAsync(),
-            // list => list.Select(entity => _mapper.Map<ExpenseResponse>(entity)).ToList()
+            // return await APIResponseHelper.HandleGet<IEnumerable<Transaction>, List<TransactionResponse>>(
+            // async () => await _serviceCollections.TransactionServices.GetAllAsync(),
+            // list => list.Select(entity => _mapper.Map<TransactionResponse>(entity)).ToList()
             // );
 
         }
         [HttpPost("Get")]
         public async Task<IActionResult> GetById(int id)
         {
-            return await APIResponseHelper.HandleGet<Expense, ExpenseResponse>(
-            async () => await _serviceCollections.ExpenseServices.GetAsync(
-                new Expression<Func<Expense, bool>>[] { e => e.Id == id }
+            return await APIResponseHelper.HandleGet<Transaction, TransactionResponse>(
+            async () => await _serviceCollections.TransactionServices.GetAsync(
+                new Expression<Func<Transaction, bool>>[] { e => e.Id == id }
             ),
-            entity => _mapper.Map<ExpenseResponse>(entity)
+            entity => _mapper.Map<TransactionResponse>(entity)
     );
         }
         [HttpPost("Update")]
-        public async Task<IActionResult> Update(ExpenseRequest entity)
+        public async Task<IActionResult> Update(TransactionRequest entity)
         {
             return await APIResponseHelper.HandleUpdate<ExpenseRequest, Expense, ExpenseResponse>(
                 entity,
